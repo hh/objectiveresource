@@ -1,0 +1,14 @@
+#rvm 1.8.7@mr --create
+
+rvm use --create --install 1.8.7@or >/dev/null 2>&1
+
+if [[ -s "./or.gems" ]]; then
+  if ! rvm gemset import or.gems >/dev/null 2>&1; then
+    echo "ERROR: Unable to bootstrap the gems" >&2
+  fi
+fi
+
+# Bundle is available, non-custom config.
+#if command -v bundle >/dev/null && ! grep -q BUNDLE_FROZEN .bundle/config 2>/dev/null ; then
+#  bundle install >/dev/null 2>&1
+#fi

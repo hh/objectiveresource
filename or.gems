@@ -1,0 +1,12 @@
+# or.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+actionmailer -v2.3.4
+actionpack -v2.3.4
+activerecord -v2.3.4
+activeresource -v2.3.4
+activesupport -v2.3.4
+faker -v0.3.1
+populator -v1.0.0
+rack -v1.0.1
+rails -v2.3.4
+rake -v0.8.7
+sqlite3 -v1.3.3
